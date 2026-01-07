@@ -1,0 +1,18 @@
+[package]
+name = "LUdual"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rayon = "1.10"
+clap = { version = "4.5", features = ["derive"] }
+anyhow = "1.0"
+byteorder = "1.5"
+
+[[bin]]
+name = "driver"
+path = "src/bin/driver.rs"
+
+[[bin]]
+name = "worker"
+path = "src/bin/worker.rs"
